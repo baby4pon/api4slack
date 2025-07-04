@@ -87,14 +87,32 @@ WebSocket (Socket Mode) を使用するため、従来の ngrok 設定は不要�
 
 ```
 api4slack/
-├── app.js              # メインアプリケーションファイル
-├── package.json        # 依存関係とスクリプト
-├── .env               # 環境変数（Git管理外）
-├── .gitignore         # Git除外設定
-├── docs/              # ドキュメントフォルダ
-│   └── SLACK_SETUP.md # Slack App 設定手順
-└── README.md          # このファイル
+├── app.js                        # メインアプリケーションファイル
+├── package.json                  # 依存関係とスクリプト
+├── .env                         # 環境変数（Git管理外）
+├── .gitignore                   # Git除外設定
+├── docs/                        # ドキュメントフォルダ
+│   ├── SLACK_SETUP.md          # Slack App 設定手順
+│   ├── sequence-diagrams.md    # システムシーケンス図
+│   ├── user-interaction-flow.md # ユーザーインタラクション図
+│   ├── system-architecture.md  # システムアーキテクチャ図
+│   └── mermaid-guide.md        # Mermaid図利用ガイド
+└── README.md                    # このファイル
 ```
+
+## システム設計図
+
+このプロジェクトでは、システムの理解を深めるためのMermaidシーケンス図を提供しています：
+
+- **[システムシーケンス図](./docs/sequence-diagrams.md)** - 詳細な処理フローとコンポーネント間の相互作用
+- **[ユーザーインタラクション図](./docs/user-interaction-flow.md)** - ユーザー視点での機能使用フロー
+- **[システムアーキテクチャ図](./docs/system-architecture.md)** - 全体的なシステム構成と設計原則
+- **[Mermaid図利用ガイド](./docs/mermaid-guide.md)** - 図の表示方法と更新手順
+
+これらの図は以下の用途に活用できます：
+- 新しい開発者のオンボーディング
+- システムの保守・拡張時の参考資料
+- 技術仕様書としてのドキュメント
 
 ## 使用方法
 
