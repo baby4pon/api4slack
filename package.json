@@ -1,0 +1,23 @@
+{
+  "name": "api4slack",
+  "version": "1.0.0",
+  "description": "Slack Bot サーバー - Node.js + Slack Bolt を使用",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "debug": "DEBUG=* node app.js",
+    "websocket-test": "DEBUG=@slack/socket-mode node app.js"
+  },
+  "keywords": ["slack", "bot", "nodejs", "bolt"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^3.16.0",
+    "dotenv": "^16.3.1",
+    "debug": "^4.3.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

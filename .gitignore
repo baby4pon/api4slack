@@ -1,0 +1,17 @@
+# 依存関係
+node_modules/
+
+# 環境変数ファイル
+.env
+
+# ログファイル
+*.log
+npm-debug.log*
+
+# ランタイム情報
+.DS_Store
+Thumbs.db
+
+# IDEファイル
+.vscode/
+.idea/
