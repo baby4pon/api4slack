@@ -15,9 +15,9 @@ graph TB
         App[Slack Bolt App]
         
         subgraph "Event Handlers"
-            SlashHandler[スラッシュコマンド<br/>ハンドラー]
-            MentionHandler[メンション<br/>ハンドラー]
-            ActionHandler[アクション<br/>ハンドラー]
+            SlashHandler[スラッシュコマンド<br>ハンドラー]
+            MentionHandler[メンション<br>ハンドラー]
+            ActionHandler[アクション<br>ハンドラー]
         end
         
         subgraph "Core Components"
@@ -34,7 +34,7 @@ graph TB
     end
     
     subgraph "Configuration"
-        EnvVars[環境変数<br/>(.env)]
+        EnvVars[環境変数<br>(.env)]
         TokenManager[トークン管理]
     end
 
@@ -44,7 +44,7 @@ graph TB
     User -->|Button clicks| SlackAPI
     
     %% WebSocket Connection
-    SlackAPI <-->|WebSocket<br/>(Socket Mode)| WSClient
+    SlackAPI <-->|WebSocket<br>(Socket Mode)| WSClient
     
     %% Internal Flow
     WSClient --> App
